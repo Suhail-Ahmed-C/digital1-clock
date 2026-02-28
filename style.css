@@ -1,0 +1,25 @@
+ body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #111;
+      color: #0f0;
+      font-family: 'Courier New', monospace;
+      font-size: 70px;
+    }
+
+    #clock {
+      border: 3px solid #0f0;
+      padding: 20px 50px;
+      border-radius: 15px;
+    }
+
+    .colon {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
